@@ -32,7 +32,7 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
-
+ #new pipeline
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
