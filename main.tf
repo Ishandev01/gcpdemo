@@ -26,7 +26,7 @@ source = "./module/networkskeleton/cloudnat"
 namenat = var.namenat
 routerid = module.router.router
 regionnat =var.regionnat
-subnetworkname =module.subnet.pri_subnet_id
+subnetworkname =module.subnet.pri_subnet_id[0]
 natip = var.natip
 nameip = var.nameip
 }
