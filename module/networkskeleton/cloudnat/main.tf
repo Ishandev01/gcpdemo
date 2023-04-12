@@ -8,7 +8,7 @@ resource "google_compute_router_nat" "nat" {
 
     subnetwork {
         name = var.subnetworkname
-        source_ip_ranges_to_nat = "ALL_IP_RANGES"
+        source_subnetwork_ip_ranges_to_nat = "ALL_SUBNETWORKS_ALL_IP_RANGES"
     }
     nat_ips = [google_compute_address.nat.self_link]
 }
