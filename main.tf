@@ -10,4 +10,5 @@ cidr_range = var.cidr_range
 pub_subnet_cidr_block = var.pub_subnet_cidr_block
 pub_subnet_name = var.pub_subnet_name
 region = var.region
+regionpub = var.regionpub
 }
