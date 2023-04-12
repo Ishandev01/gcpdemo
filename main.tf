@@ -13,3 +13,9 @@ pub_subnet_name = var.pub_subnet_name
 region = var.region
 regionpub = var.regionpub
 }
+
+module "router"
+source = "./module/networkskeleton/router"
+vpcroute = module.vpc.vpc_id
+regionrouter = var.regionrouter
+routername = var.routername

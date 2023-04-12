@@ -2,6 +2,7 @@ variable "vpc_name" {
     default  = ""
     description = ""
 }
+#------------------subnet------------#
 variable "cidr_range" {
     default  = ""
     description = ""
@@ -23,6 +24,19 @@ variable "pri_subnet_name" {
     description = ""
 }
 variable "regionpub" {
+    default  = ""
+    description = ""
+}
+#---------------------router-------#
+variable "routername" {
+    default  = ""
+    description = ""
+}
+variable "regionrouter" {
+    default  = ""
+    description = ""
+}
+variable "vpcroute" {
     default  = ""
     description = ""
 }
