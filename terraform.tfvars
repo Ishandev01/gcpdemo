@@ -1,5 +1,5 @@
 #----------------vpc--------------#
-vpc_name = "gcpdemo"
+vpc_name = "githubactions"
 #---------------private-subnet-------------#
 cidr_range = ["10.0.12.0/22" , "10.0.16.0/22" ]
 pri_subnet_name = ["prisubnet1", "prisubnet2"]
