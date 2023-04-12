@@ -7,4 +7,4 @@ region = "asia-south1"
 #---------------public-subnet------------------#
 pub_subnet_cidr_block = ["10.0.4.0/22" , "10.0.8.0/22"]
 pub_subnet_name = ["pubsubnet1", "pubsubnet2"]
-regionpub = "asia-south1"
+regionpub = "asia-south2"
