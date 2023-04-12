@@ -40,3 +40,20 @@ variable "vpcroute" {
     default  = ""
     description = ""
 }
+#-----------------cloudnat---------#
+variable "namenat" {
+    default  = ""
+    description = ""
+}
+variable "regionnat" {
+    default  = ""
+    description = ""
+}
+variable "natip" {
+    default  = ""
+    description = ""
+}
+variable "nameip" {
+    default  = ""
+    description = ""
+}

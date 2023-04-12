@@ -11,3 +11,7 @@ regionpub = "asia-south2"
 #---------------router-------------------------#
 routername = "demorouter"
 regionrouter = "asia-south2"
+#----------------cloudnat--------------------#
+namenat = "demonat"
+regionnat = "asia-south2"
+nameip = "demonatip"
