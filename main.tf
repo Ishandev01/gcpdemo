@@ -21,7 +21,7 @@ regionrouter = var.regionrouter
 routername = var.routername
 }
 
-module "nat"
+module "nat" {
 source = "./module/networkskeleton/cloudnat"
 namenat = var.namenat
 routerid = module.router.router
@@ -29,3 +29,4 @@ regionnat =var.regionnat
 subnetworkname =module.subnet.pri_subnet_id
 natip = var.natip
 nameip = nameip
+}
