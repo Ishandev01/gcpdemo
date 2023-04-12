@@ -4,13 +4,13 @@ resource "google_compute_router_nat" "nat" {
     region = var.regionnat
 
     source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
-    nat_ip_allocation_option = "MANUAL_ONLY"
+    nat_ip_allocate_option = "MANUAL_ONLY"
 
     subnetwork {
         name = var.subnetworkname
         source_ip_range_to_nat = ["ALL_IP_RANGES"]
     }
-    nat_ips = var.natip
+    nat_ips = [google_compute_address.nat.self_link]
 }
 resource "google_compute_address" "nat" {
     name = var.nameip
