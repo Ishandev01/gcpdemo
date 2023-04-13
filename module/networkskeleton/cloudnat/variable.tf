@@ -10,10 +10,10 @@ variable "regionnat" {
     default  = ""
     description = ""
 }
-variable "subnetworkname" {
-    default  = ""
-    description = ""
-}
+# variable "subnetworkname" {
+#     default  = ""
+#     description = ""
+# }
 variable "natip" {
     default  = ""
     description = ""
