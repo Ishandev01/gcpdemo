@@ -1,4 +1,4 @@
-resource "google_compute_router_nat" "nat" {
+resource "google_compute_router_nat" "natdemo" {
     name = var.namenat
     router = var.routerid
     region = var.regionnat
