@@ -8,7 +8,7 @@ resource "google_container_cluster" "primary" {
 
   addons_config {
     http_load_balancing {
-      disable =true
+      disabled = true
     }
     horizontal_pod_autoscaling {
       disabled = false
@@ -24,8 +24,6 @@ resource "google_container_cluster" "primary" {
     enable_private_nodes    = true
     enable_private_endpoint = false
     master_ipv4_cidr_block  = "10.0.20.0/28"
-
-    depends_on = [google_service_account.cicdgit]
   }
 }
 
