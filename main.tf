@@ -33,3 +33,9 @@ depends_on = [
   module.router
 ]
 }
+
+module "gke" {
+source = "./module/gke"
+vpccluster = module.vpc.vpc_id
+subnetworkcluster = module.subnet.pri_subnet_id[0]
+}

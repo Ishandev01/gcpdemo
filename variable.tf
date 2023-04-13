@@ -57,3 +57,12 @@ variable "nameip" {
     default  = ""
     description = ""
 }
+#-------------------gke--------------------#
+variable "vpccluster" {
+    default  = ""
+    description = ""
+}
+variable "subnetworkcluster" {
+    default  = ""
+    description = ""
+}
