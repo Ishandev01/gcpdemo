@@ -16,5 +16,5 @@ resource "google_compute_address" "nat" {
     name = var.nameip
     address_type = "EXTERNAL"
     network_tier = "PREMIUM"
-    region = "asia-south2"
+    region = "asia-south1"
 }

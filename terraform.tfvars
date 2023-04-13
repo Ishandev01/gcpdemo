@@ -10,8 +10,8 @@ pub_subnet_name = ["pubsubnet1", "pubsubnet2"]
 regionpub = "asia-south2"
 #---------------router-------------------------#
 routername = "demorouter"
-regionrouter = "asia-south2"
+regionrouter = "asia-south1"
 #----------------cloudnat--------------------#
 namenat = "demonat"
-regionnat = "asia-south2"
+regionnat = "asia-south1"
 nameip = "demonatip"
