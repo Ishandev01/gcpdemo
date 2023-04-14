@@ -7,13 +7,14 @@ resource "google_compute_subnetwork" "private" {
      private_ip_google_access = true
 
     secondary_ip_range = { 
-       ip_cidr_range = var.podrange 
-       range_name = var.podrangename
-    }
-    secondary_ip_range = {
-        ip_cidr_range = var.servicerange
-        range_name = var.servicename
-    }
+        count = 2
+       ip_cidr_range = var.podrange[count.index]
+       range_name = var.podrangename [count.index]
+     }
+    # secondary_ip_range = {
+    #     ip_cidr_range = var.servicerange
+    #     range_name = var.servicename
+    # }
 }
 
 resource "google_compute_subnetwork" "public" {

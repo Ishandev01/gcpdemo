@@ -34,11 +34,11 @@ variable "podrangename" {
     default  = ""
     description = ""
 }
-variable "servicerange" {
-    default  = ""
-    description = ""
-}
-variable "servicename" {
-    default  = ""
-    description = ""
-}
+# variable "servicerange" {
+#     default  = ""
+#     description = ""
+# }
+# variable "servicename" {
+#     default  = ""
+#     description = ""
+# }
