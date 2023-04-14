@@ -7,7 +7,7 @@ resource "google_compute_subnetwork" "private" {
      private_ip_google_access = true
 
     secondary_ip_range = { 
-        count = 2
+        count = length(var.ip_cidr_range)
        ip_cidr_range = var.podrange[count.index]
        range_name = var.podrangename [count.index]
      }
