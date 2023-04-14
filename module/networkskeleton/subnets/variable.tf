@@ -26,7 +26,7 @@ variable "regionpub" {
     default  = ""
     description = ""
 }
-variable "podrange" {
+variable "pod_range" {
     default  = ""
     description = ""
 }
