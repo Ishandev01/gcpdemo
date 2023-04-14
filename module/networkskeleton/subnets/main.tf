@@ -6,11 +6,11 @@ resource "google_compute_subnetwork" "private" {
      network = var.vpcnetwork
      private_ip_google_access = true
 
-    secondary_ip_range = {
-        count = length(var.pod_range)
-       ip_cidr_range = var.pod_range
-       range_name = var.podrangename 
-    }
+    # secondary_ip_range = {
+    #     count = length(var.pod_range)
+    #    ip_cidr_range = var.pod_range
+    #    range_name = var.podrangename 
+    # }
     #  secondary_ip_range = {
     #  ip_cidr_range = var.servicerange
     # #     range_name = var.servicename

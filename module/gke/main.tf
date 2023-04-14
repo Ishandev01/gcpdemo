@@ -25,6 +25,11 @@ resource "google_container_cluster" "primary" {
     enable_private_endpoint = false
     master_ipv4_cidr_block  = "10.0.20.0/28"
   }
+  ip_allocation_policy {
+    cluster_ipv4_cidr_block  = "10.103.0.0/16"
+    services_ipv4_cidr_block = "10.104.0.0/16"
+  }
+
 }
 
 resource "google_container_node_pool" "primary_preemptible_nodes" {
