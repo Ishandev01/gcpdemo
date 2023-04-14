@@ -14,8 +14,8 @@ region = var.region
 regionpub = var.regionpub
 podrange = var.podrange
 podrangename = var.podrangename
-servicerange = var.servicerange
-servicename = var.servicename
+# servicerange = var.servicerange
+# servicename = var.servicename
 }
 
 module "router" {
