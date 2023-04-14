@@ -12,6 +12,10 @@ pub_subnet_cidr_block = var.pub_subnet_cidr_block
 pub_subnet_name = var.pub_subnet_name
 region = var.region
 regionpub = var.regionpub
+podrange = var.podrange
+podrangename = var.podrangename
+servicerange = var.servicerange
+servicename = var.servicename
 }
 
 module "router" {

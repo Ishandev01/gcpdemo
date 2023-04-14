@@ -27,6 +27,22 @@ variable "regionpub" {
     default  = ""
     description = ""
 }
+variable "podrange" {
+    default  = ""
+    description = ""
+}
+variable "podrangename" {
+    default  = ""
+    description = ""
+}
+variable "servicerange" {
+    default  = ""
+    description = ""
+}
+variable "servicename" {
+    default  = ""
+    description = ""
+}
 #---------------------router-------#
 variable "routername" {
     default  = ""
