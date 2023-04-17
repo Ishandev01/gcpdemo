@@ -17,7 +17,7 @@ resource "google_service_account_iam_member" "admin-account-iam" {
   service_account_id = google_service_account.service_account.name
   for_each = toset([
     "roles/roles/container.developer",
-    "roles/Owner",
+    "roles/owner",
     "roles/container.clusterViewer",
     "roles/container.admin",
     "roles/container.clusterAdmin",
