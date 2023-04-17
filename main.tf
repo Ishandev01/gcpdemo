@@ -45,7 +45,7 @@ subnetworkcluster = module.subnet.pri_subnet_id[0]
 }
 
 module "serviceaccount" {
-  source = "./project"
+  source = "./module/project"
   gcp_service_account_name = var.gcp_service_account_name
   gcp_service_account = var.gcp_service_account
 }
