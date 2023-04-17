@@ -16,7 +16,7 @@ resource "google_project_service" "service_account" {
 resource "google_service_account_iam_member" "admin-account-iam" {
   service_account_id = google_service_account.service_account.name
   for_each = toset([
-    "roles/roles/container.developer",
+    "roles/container.developer",
     "roles/owner",
   ])
   role               = each.key
