@@ -18,11 +18,6 @@ resource "google_service_account_iam_member" "admin-account-iam" {
   for_each = toset([
     "roles/roles/container.developer",
     "roles/owner",
-    "roles/container.clusterViewer",
-    "roles/container.admin",
-    "roles/container.clusterAdmin",
-    "roles/container.hostServiceAgentUser",
-    "roles/container.viewer",
   ])
   role               = each.key
   member             = "serviceAccount:${google_service_account.service_account.email}"
