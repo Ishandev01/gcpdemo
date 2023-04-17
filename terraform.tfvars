@@ -19,3 +19,6 @@ regionrouter = "asia-south1"
 namenat = "demonat"
 regionnat = "asia-south1"
 nameip = "demonatip"
+#------------------serviceaccount----------------#
+gcp_service_account_name = "justtesting"
+gcp_service_account = "justtesting"
