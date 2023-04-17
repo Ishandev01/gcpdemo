@@ -13,3 +13,12 @@ resource "google_project_service" "service_account" {
 
   project = "githubdemo-383406"
 }
+resource "google_service_account_iam_member" "admin-account-iam" {
+  service_account_id = google_service_account.service_account.name
+  for_each = toset([
+    "roles/roles/container.developer",
+    "roles/Owner"
+  ])
+  role               = each.key
+  member             = "serviceAccount:${google_service_account.service_account.email}"
+}
